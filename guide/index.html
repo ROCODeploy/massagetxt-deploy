@@ -1,14 +1,9 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<title>MassageTXT Guide</title>
 	<meta name="description" content="Documentation for project" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width">
-	<link rel="icon" href="data:;base64,iVBORw0KGgo=">
 	<meta name="viewport" content="width=device-width">
 	<link rel="canonical" href="/guide" />
 	<link rel="stylesheet" type="text/css" href="/_shared/__external/normalize.css/normalize.css">
@@ -20,23 +15,28 @@
 <body>
 
 
+
 <div class="MSWGuide OLSKCommon">
 
-<h1>MassageTXT Guide</h1>
+<div class="MSWGuideIdentity OLSKCommonCard OLSKCommonIdentityCard">
+	<section>
+		<span class="MSWGuideIdentityName">MassageTXT Guide</span>
+	</section>
+</div>
+
 <div class="MSWGuideNotice">
 This document is a work-in-progress.
 </div>
 
-<h2>Quick Introduction</h2>
+<h1 id="quick-introduction">Quick Introduction</h1>
 <p>Transformations are specified as an <em>Expression</em>.</p>
 <p>An <em>Expression</em> begins with a <em>Variable</em>, usually <code>$input</code>.</p>
 <p>An <em>Operation</em> follows the <em>Variable</em>, for example <code>lines</code>:</p>
 <pre><code>$input.lines</code></pre>
 <p>Sometimes an <em>Operation</em> takes arguments</p>
 <pre><code>$input.prepend(Hello )</code></pre>
-<hr>
-<h2>API Reference</h2>
-<h3>String Operations</h3>
+<h1 id="api-reference">API Reference</h1>
+<h2 id="string-operations">String Operations</h2>
 <p><strong>lowercase</strong></p>
 <p><strong>split</strong>(LITERAL)</p>
 <p><strong>lines</strong></p>
@@ -45,10 +45,10 @@ This document is a work-in-progress.
 <p><strong>prepend</strong>(LITERAL)</p>
 <p><strong>postpend</strong>(LITERAL)</p>
 <p><strong>markdown</strong></p>
-<h3>Object Operations</h3>
+<h2 id="object-operations">Object Operations</h2>
 <p><strong>remap</strong>(MAPPING)</p>
 <p><strong>print</strong>(LITERAL)</p>
-<h3>Array Operations</h3>
+<h2 id="array-operations">Array Operations</h2>
 <p><strong>first</strong></p>
 <p><strong>last</strong></p>
 <p><strong>reverse</strong></p>
@@ -58,18 +58,18 @@ This document is a work-in-progress.
 <p><strong>capture</strong>(REGEX)</p>
 <p><strong>remap</strong>(MAPPING)</p>
 <p><strong>join</strong>(LITERAL)</p>
-<h3>MarkdownTree Operations</h3>
+<h2 id="markdowntree-operations">MarkdownTree Operations</h2>
 <p><strong>sections</strong></p>
 <p><strong>content</strong>(LITERAL)</p>
 <p><strong>items</strong></p>
 <p><strong>paragraphs</strong></p>
 
 
-<hr>
+<hr role="presentation" />
 
 <div class="MSWRootLink">
 
-<a class="OLSKRootLink OLSKCommonIdentity" href="/en/" title="Return to the homepage">
+<a class="OLSKRootLink OLSKCommonRootLink" href="/en/" title="Return to the homepage">
 	<img class="OLSKRootLinkImage" role="presentation" src="/_shared/MSWRootLink/ui-assets/identity.svg">
 </a>
 
@@ -78,6 +78,7 @@ This document is a work-in-progress.
 
 
 </div>
+
+
 </body>
 </html>
-
