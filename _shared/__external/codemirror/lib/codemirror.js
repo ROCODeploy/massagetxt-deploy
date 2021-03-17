@@ -9661,6 +9661,6 @@
 
   CodeMirror.version = "5.42.3";
 
-  return CodeMirror;
+  CodeMirror.posFromMouse = posFromMouse; return  CodeMirror;
 
 })));
