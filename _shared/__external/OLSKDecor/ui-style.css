@@ -309,10 +309,6 @@
 
 /* OLSKNarrow */
 
-.OLSKIsLoading .OLSKNarrowBody {
-	visibility: hidden;
-}
-
 .OLSKNarrow {
 	/* OLSKNarrowFlexbox:Parent */
 	display: flex;
@@ -465,7 +461,7 @@
 }
 
 a.OLSKDecorPress {
-	color: var(--OLSKCommonForeground);
+	color: black;
 	text-decoration: none;
 }
 
@@ -762,7 +758,11 @@ a.OLSKDecorPress {
 	margin: 10px 0;
 }
 
-/* OLSKCollectionChunkHeading */
+/* OLSKCollection */
+
+.OLSKIsLoading .OLSKCollection {
+	visibility: hidden;
+}
 
 .OLSKCollectionChunkHeading {
 	padding: 6px;
@@ -772,8 +772,6 @@ a.OLSKDecorPress {
 	color: var(--OLSKCommonForeground);
 	background: var(--OLSKChunkHeadingBackground);
 }
-
-/* OLSKCollectionItemStash */
 
 .OLSKCollectionItemStash .OLSKCollectionItemStashStatus {
 	background: var(--OLSKCommonForeground);
@@ -798,4 +796,41 @@ a.OLSKDecorPress {
 
 .OLSKCollectionItemStashStatusImage * {
 	stroke: var(--OLSKCommonBackground);
+}
+
+/* ROCOForum */
+
+.OLSKDecor .ROCOForum iframe {
+	width: 100%;
+}
+
+/* OLSKBanner */
+
+.OLSKBanner {
+	padding: 8px;
+
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	
+	background: #f3f3f3;
+	border: 1px solid #ccc;
+	text-align: center;
+
+	z-index: 1;
+}
+
+.OLSKBanner .OLSKDecorPressCall {
+	padding: 4px;
+}
+
+@media screen and (max-width: 760px) {
+
+	.OLSKBannerButton {
+		display: block;
+
+		margin: 10px 0;
+	}
+
 }
