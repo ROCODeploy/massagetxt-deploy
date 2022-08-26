@@ -64,36 +64,44 @@
 
 <h2 class="ROCOGazetteHeading">Follow my journey</h2>
 
-<p class="OLSKFollow">Receive updates on <a class="OLSKFollowTwitter" target="_blank" href="https://twitter.com/rosano">Twitter</a> or <a class="OLSKFollowMastodon" target="_blank" href="https://merveilles.town/@rosano">Mastodon</a>.</p>
+<p class="OLSKFollow">Find me on <a class="OLSKFollowTwitter" target="_blank" href="https://twitter.com/rosano">Twitter</a> or <a class="OLSKFollowMastodon" target="_blank" href="https://merveilles.town/@rosano">Mastodon</a>.</p>
 
 
-<p><a class="ROCOBulletin2 OLSKDecorPress OLSKDecorPressCall OLSKDecorInput" href="https://rosano.ca/ephemerata">Subscribe to mailing list</a></p>
+	<script defer src="https://unpkg.com/@tryghost/portal@latest/umd/portal.min.js" data-ghost="https://list.rosano.ca" data-api="https://list.rosano.ca/ghost/api/content/" data-key="d55fde19a3ed50dd974232013d"></script>
+
+<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank" data-members-form>
+
+<p>
+	<input class="ROCOBulletinAddressField" type="email" name="email" required="true" placeholder="you@example.com" data-members-email />
+</p>
+
+<!-- ghost -->
+<input class="ROCOBulletinProjectField" type="hidden" name="labels" value="RP_002" data-members-label />
+
+<!-- buttondown -->
+<input class="ROCOBulletinProjectFieldButtondown" type="hidden" name="tag" value="RP_002" />
+<input type="hidden" value="1" name="embed" />
+
+<p>
+	<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe to mailing list" />
+	<strong class="ROCOBulletinFeedback">Check your inbox (and maybe the spam folder) for an activation link.</strong>
+</p>
+
+</form>
 
 <style>
-.ROCOBulletin2 {
-  padding: 5px !important;
-  display: none;
+.ROCOBulletin .ROCOBulletinFeedback {
+	display: none;
 }
 
-.ROCOBulletin {
-  /*display: none;*/
+.ROCOBulletin.success input {
+	display: none !important;
+}
+
+.ROCOBulletin.success .ROCOBulletinFeedback {
+	display: unset !important;
 }
 </style>
-
-<form class="ROCOBulletin OLSKDecorBigForm" method="post" action="https://buttondown.email/api/emails/embed-subscribe/rosano" target="_blank">
-
-	<p>
-		<input class="ROCOBulletinAddressField" type="email" name="email" placeholder="you@example.com" />
-	</p>
-
-	<input class="ROCOBulletinProjectField" type="hidden" name="tag" value="RP_002" />
-	<input type="hidden" value="1" name="embed" />
-
-	<p>
-		<input class="ROCOBulletinSubmitButton OLSKDecorPressCall" type="submit" value="Subscribe to mailing list" />
-	</p>
-	
-</form>
 
 
 </div>
@@ -110,7 +118,7 @@
 </div>
 
 
-<a class="OLSKEdit" href="https://github.com/massagetxt/massagetxt-web" target="_blank">Edit this on GitHub</a>
+<a class="OLSKEdit" href="https://github.com/massagetxt/massagetxt-web" target="_blank">Edit this</a>
 
 
 <hr role="presentation" />
