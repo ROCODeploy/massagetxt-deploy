@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/_shared/__external/OLSKDecor/ui-style.css">
 	<link rel="stylesheet" type="text/css" href="/_shared/common/ui-style.css">
 	<link rel="stylesheet" type="text/css" href="/open-guide/ui-style.css">
-	<script src="https://olsk.rosano.ca/OLSKFigures/master/main.js"></script>
+	<script defer src="https://olsk.rosano.ca/OLSKFigures/master/main.js"></script>
 	<script src="https://olsk.rosano.ca/OLSKBanner/master/main.js"></script>
 </head>
 
@@ -34,9 +34,11 @@ This document is a work-in-progress.
 <p>Transformations are specified as an <em>Expression</em>.</p>
 <p>An <em>Expression</em> begins with a <em>Variable</em>, usually <code>$input</code>.</p>
 <p>An <em>Operation</em> follows the <em>Variable</em>, for example <code>lines</code>:</p>
-<pre><code>$input.lines</code></pre>
+<pre><code>$input.lines
+</code></pre>
 <p>Sometimes an <em>Operation</em> takes arguments</p>
-<pre><code>$input.prepend(Hello )</code></pre>
+<pre><code>$input.prepend(Hello )
+</code></pre>
 <h1 id="api-reference">API Reference</h1>
 <h2 id="string-operations">String Operations</h2>
 <p><strong>lowercase</strong></p>

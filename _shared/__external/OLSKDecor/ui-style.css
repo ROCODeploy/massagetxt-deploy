@@ -499,6 +499,12 @@ a.OLSKDecorPress {
 	background: none !important;
 }
 
+.OLSKDecorPressCallInverted {
+	border:  none !important;
+	background: black !important;
+	color: white !important;
+}
+
 .OLSKDecorPressDestroy {
 	border-color: #800002 !important;
 	background: #ffefef !important;
@@ -773,7 +779,7 @@ a.OLSKDecorPress {
 	margin-top: 0;
 }
 
-.OLSKDecorBigForm input[type=text], .OLSKDecorBigForm input[type=email], .OLSKDecorBigForm textarea {
+.OLSKDecorBigForm input[type=text], .OLSKDecorBigForm input[type=email], .OLSKDecorBigForm input[type=url], .OLSKDecorBigForm input[type=tel], .OLSKDecorBigForm textarea {
 	width: 90%;
 	padding: calc(var(--OLSKSharedPadding) * 2);
 }
@@ -837,6 +843,7 @@ a.OLSKDecorPress {
 
 .OLSKDecorGlossary {
 	padding: 30px;
+	border-radius: 8px;
 
 	margin: 50px 0;
 
