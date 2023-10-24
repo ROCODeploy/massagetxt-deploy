@@ -1,0 +1,32 @@
+:root {
+	--OLSKCommonFontSize: 12pt;
+}
+
+body {
+	background: var(--OLSKCommonBackground);
+	color: var(--OLSKCommonForeground);
+}
+
+.MSWGuideExample {
+	display: block;
+	padding: 20px 0 10px 15px;
+
+	background: hsl(0, 0%, 94%);
+	color: hsl(0, 0%, 20%);
+}
+
+.MSWGuideExample dt {
+	font-weight: bold;
+}
+
+.MSWGuideExample dd {
+	margin: 10px 20px;
+}
+
+.MSWGuideExample code {
+	padding: 0;
+}
+
+.OLSKRootLink {
+	width: 48px;
+}

@@ -1,0 +1,54 @@
+.MSWExplore {
+	height: 100vh;
+
+	font-family: 'Helvetica Neue', 'Helvetica', sans;
+	font-size: 10pt;
+
+	/* MSWExploreFlexbox:Parent */
+	display: flex;
+	flex-direction: column;
+}
+
+#MSWPromptTarget {
+	/* MSWExploreFlexbox:Child */
+	flex-grow: 1;
+
+	/* MSWPromptTargetFlexbox:Parent */
+	display: flex;
+	flex-direction: column;
+}
+
+#MSWPromptTarget .MSWPrompt {
+	/* MSWPromptTargetFlexbox:Child */
+	flex-grow: 1;
+}
+
+@media screen and (max-width: 760px) {
+
+.MSWExploreFooter {
+	display: none;
+}
+
+}
+
+.MSWExploreFooter {
+	border-top: 1px solid rgba(0, 0, 0, 0.5);
+
+	/* MSWExploreFlexbox:Child */
+	flex-shrink: 0;
+}
+
+.MSWRootLink .OLSKCommonRootLink {
+	width: 30px;
+	padding: 4px;
+
+	margin: 0;
+}
+
+.MSWRootLink img {
+	width: inherit;
+}
+
+.OLSKBanner {
+	display: none !important;
+}

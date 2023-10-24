@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MassageTXT Guide</title>
+	<meta name="description" content="Documentation for project" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#000000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="canonical" href="/guide" />
+	<link rel="stylesheet" type="text/css" href="/_shared/__external/normalize.css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/_shared/__external/OLSKDecor/ui-style.css">
+	<link rel="stylesheet" type="text/css" href="/_shared/common/ui-style.css">
+	<link rel="stylesheet" type="text/css" href="/open-guide/ui-style.css">
+	<script defer src="https://olsk.rosano.ca/OLSKFigures/master/main.js"></script>
+	<script src="https://olsk.rosano.ca/OLSKBanner/master/main.js"></script>
+</head>
+
+<body>
+
+
+
+<div class="MSWGuide OLSKDecor OLSKDecorCapped">
+
+<div class="MSWGuideCrown OLSKCommonCard OLSKCommonCrownCard">
+	<section>
+		<span class="MSWGuideCrownName">MassageTXT Guide</span>
+	</section>
+</div>
+
+<div class="OLSKDecorNotice">
+This document is a work-in-progress.
+</div>
+
+<h1 id="quick-introduction">Quick Introduction</h1>
+<p>Transformations are specified as an <em>Expression</em>.</p>
+<p>An <em>Expression</em> begins with a <em>Variable</em>, usually <code>$input</code>.</p>
+<p>An <em>Operation</em> follows the <em>Variable</em>, for example <code>lines</code>:</p>
+<pre><code>$input.lines
+</code></pre>
+<p>Sometimes an <em>Operation</em> takes arguments</p>
+<pre><code>$input.prepend(Hello )
+</code></pre>
+<h1 id="api-reference">API Reference</h1>
+<h2 id="string-operations">String Operations</h2>
+<p><strong>lowercase</strong></p>
+<p><strong>split</strong>(LITERAL)</p>
+<p><strong>lines</strong></p>
+<p><strong>conform</strong>(REGEX)</p>
+<p><strong>capture</strong>(REGEX)</p>
+<p><strong>prepend</strong>(LITERAL)</p>
+<p><strong>postpend</strong>(LITERAL)</p>
+<p><strong>markdown</strong></p>
+<h2 id="object-operations">Object Operations</h2>
+<p><strong>remap</strong>(MAPPING)</p>
+<p><strong>print</strong>(LITERAL)</p>
+<h2 id="array-operations">Array Operations</h2>
+<p><strong>first</strong></p>
+<p><strong>last</strong></p>
+<p><strong>reverse</strong></p>
+<p><strong>unique</strong></p>
+<p><strong>group</strong>(LITERAL)</p>
+<p><strong>conform</strong>(REGEX)</p>
+<p><strong>capture</strong>(REGEX)</p>
+<p><strong>remap</strong>(MAPPING)</p>
+<p><strong>join</strong>(LITERAL)</p>
+<h2 id="markdowntree-operations">MarkdownTree Operations</h2>
+<p><strong>sections</strong></p>
+<p><strong>content</strong>(LITERAL)</p>
+<p><strong>items</strong></p>
+<p><strong>paragraphs</strong></p>
+
+
+<hr role="presentation" />
+
+<div class="MSWRootLink">
+
+<a class="OLSKRootLink OLSKCommonRootLink" href="/en/" title="Return to the homepage">
+	<img class="OLSKRootLinkImage" role="presentation" src="/_shared/MSWRootLink/ui-assets/identity.svg">
+</a>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
